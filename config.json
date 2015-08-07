@@ -1,0 +1,8 @@
+{
+    "debug": true,
+    "auth": {
+        "email": "email@domain.com",
+        "password": "password"
+    },
+    "room": "tastycat"
+}

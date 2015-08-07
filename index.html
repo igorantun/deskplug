@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Igor Antun">
+
+    <title>plug.dj Client - Igor</title>
+
+    <link href="public/css/emojione.min.css" rel="stylesheet" type="text/css"/>
+    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="public/css/ripples.css" rel="stylesheet">
+    <link href="public/css/index.css" rel="stylesheet">
+    <link href="public/css/material-wfont.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid main">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="row">
+                    <nav class="navbar navbar-material-grey shadow-z-2" style="-webkit-app-region: drag;">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <span class="navbar-brand">plug.dj Client</span>
+                            </div>
+
+                            <div class="collapse navbar-collapse">
+                                <div style="margin-top:10px">
+                                    <span id="track" class="no-drag">Nothing is playing</span>
+
+                                    <a href="#!" style="float:right" class="no-drag"><i class="icon mdi mdi-action-highlight-remove"></i></a>
+                                    <br>
+                                    <span style="float:right"><strong>Length: </strong><span id="length" class="no-drag">00:00</span></span>
+
+                                    <p><small><strong>current dj: </strong><span id="dj" class="no-drag">no one</span></small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8">
+                        <div class="well">
+                            <div id="video" align="center">
+                                <iframe id="ytplayer" height="460" width="818" frameborder="0"></iframe><br>
+                                <button id="meh" class="btn btn-xs btn-material-red" onclick="sendVote('meh');" disabled>Meh</button>
+                                <button id="woot" class="btn btn-xs btn-material-green" onclick="sendVote('woot');" disabled>Woot!</button>
+                                <div class="volslider" align="left"><div id="slider" class="slider volume slider-material-orange"></div></div>
+                                <span id="volume">25%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div id="chat" class="well">
+                            <div id="messages">
+                                Messages
+                            </div>
+                            <hr>
+                            <input id="input" type="text" class="form-control" placeholder="Click here to join the conversation" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>window.$ = window.jQuery = require('./public/js/jquery.js')</script>
+    <script src="public/js/jquery.linkify.min.js"></script>
+    <script src="public/js/jquery.easing.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/emojione.min.js"></script>
+    <script src="public/js/ripples.min.js"></script>
+    <script src="public/js/material.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+
+    <script src="public/js/jquery.nouislider.min.js"></script>
+    <script>
+        $(function() {
+            $.material.init();
+            $(".volume").noUiSlider({
+                start: 25,
+                connect: "lower",
+                range: {
+                    min: 0,
+                    max: 100
+                }
+            });
+        });
+    </script>
+</body>
+</html>

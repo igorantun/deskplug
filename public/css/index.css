@@ -1,0 +1,34 @@
+#messages {
+	height: 450px;
+	max-height: 450px;
+	overflow-y: scroll;
+	word-wrap: break-word;
+}
+
+#volume {
+	float: right;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+
+.volslider {
+	padding: 10px;
+	float: right;
+	width: 100px;
+}
+
+#title {
+	text-overflow: ellipsis;
+}
+
+.window-drag {
+	-webkit-app-region: drag;
+}
+
+.no-drag {
+	-webkit-app-region: no-drag;
+}
+
+.icon {
+	color: white!important;
+}
