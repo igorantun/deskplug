@@ -26,7 +26,7 @@ For now, you also need to manually insert your plug.dj's account email + passwor
 ## Usage
 >WIP
 
-After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies.
+After you clone this repo to your desktop, go to its root directory and run `npm install` to install its dependencies. Then run `npm start` to start it.
 
 
 ## License
