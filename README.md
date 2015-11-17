@@ -1,5 +1,7 @@
 Deskplug
 ========
+>This project is no longer mantained, since plug.dj has shut down its services
+
 [![GitHub Stars](https://img.shields.io/github/stars/IgorAntun/deskplug.svg)](https://github.com/IgorAntun/deskplug/stargazers) [![GitHub Issues](https://img.shields.io/github/issues/IgorAntun/deskplug.svg)](https://github.com/IgorAntun/deskplug/issues) [![Current Version](https://img.shields.io/badge/version-0.1.0-green.svg)](https://github.com/IgorAntun/deskplug)
 
 A ~~fully working~~ desktop client for plug.dj, entirely made with Javascript.
